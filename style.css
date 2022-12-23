@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0052D4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .container{
+    display: block;
+    height: 150px;
+    width: 400px;
+  }
+  .forms{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .forms label{
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .forms input{
+    height: 40px;
+  }
+
+  .forms button{
+    font-size: 30px;
+    font-weight: bold;
+ background: #b92b27;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    padding: 10px;
+    color: #FFF;
+  }
+
+  .resultado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+  .graus{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+  }
+  .graus p{
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+  }
+  .resultado span{
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+  }
+.loader{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.hide{
+  display: none;
+}
+.local{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+  .carregando {
+    animation: is-rotating 1s infinite;
+    border: 6px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: #51d4db;
+    height: 50px;
+    width: 50px;
+  }
+  
+  @keyframes is-rotating {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+  
