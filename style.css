@@ -26,7 +26,7 @@ background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+
   }
 
   .forms label{
-    font-size: 40px;
+    font-size: 25px;
     font-weight: bold;
   }
   .forms input{
