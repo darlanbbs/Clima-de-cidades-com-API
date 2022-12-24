@@ -9,8 +9,8 @@ let graus = document.querySelector('.graus')
 
 form.addEventListener('submit',async (e)=>{
     var value = document.querySelector('.input').value
+    limpar()
     try{
-        limpar()
          loading()
     e.preventDefault()
     let site = `https://api.openweathermap.org/data/2.5/weather?q=${value}&units=metric&lang=pt_br&appid=d06cdb298fafc83c520d5ab677fc477e`
@@ -33,18 +33,21 @@ form.addEventListener('submit',async (e)=>{
     cidade.innerHTML = `${jsonObj.nome},${jsonObj.country}`
     console.log(jsonObj)
     }catch(error){
+        erro()
         limpar()
     }
     limparLoading()
 })
-function limpar(error){
+function limpar(){
     hide.style.display = 'none'
     graus.style.display = 'none'
-    cidade.innerHTML = 'Cidade não encontrada'
 }
 function loading(){
     loader.style.display = 'flex'
 }
 function limparLoading(){
     loader.style.display = 'none'
+}
+function erro(){
+    cidade.innerHTML = 'Lugar não encontrado'
 }
