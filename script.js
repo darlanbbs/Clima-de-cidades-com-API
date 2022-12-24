@@ -17,7 +17,7 @@ form.addEventListener('submit',async (e)=>{
 }else{
     loading()
     e.preventDefault()
-    let site = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(value)}&units=metric&lang=pt_br&appid=d06cdb298fafc83c520d5ab677fc477e`
+    let site = `https://api.openweathermap.org/data/2.5/weather?q=${value}&units=metric&lang=pt_br&appid=d06cdb298fafc83c520d5ab677fc477e`
     let response = await fetch(site)
     let json = await response.json()
     
