@@ -37,9 +37,9 @@ form.addEventListener('submit',async (e)=>{
     max.innerHTML = jsonObj.tempMax
     cidade.innerHTML = `${jsonObj.nome},${jsonObj.country}`
     console.log(jsonObj)
-    limparLoading()
+    
 }
-
+limparLoading()
 })
 
 function limpar(){
