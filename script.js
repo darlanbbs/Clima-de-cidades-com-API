@@ -32,7 +32,7 @@ form.addEventListener('submit',async (e)=>{
     temp.innerHTML = jsonObj.temp
     max.innerHTML = jsonObj.tempMax
     cidade.innerHTML = `${jsonObj.nome},${jsonObj.country}`
-    console.log(jsonObj)
+    
     }catch(error){
         erro()
         limpar()
