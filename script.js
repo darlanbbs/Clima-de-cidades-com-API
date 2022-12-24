@@ -10,6 +10,7 @@ let graus = document.querySelector('.graus')
 form.addEventListener('submit',async (e)=>{
     var value = document.querySelector('.input').value
     limpar()
+    cidade.innerHTML = ''
     try{
          loading()
     e.preventDefault()
