@@ -1,8 +1,8 @@
-# Clima-de-cidades-com-API
+# Clima de paises-estados-cidades
 
 # Sobre o projeto
 
-# A requisição de clima das cidades é um projeto para aprimorar técnicas de javascript com API,api do site (https://openweathermap.org/api)
+# A requisição de clima dos lugares é um projeto para aprimorar técnicas de javascript com API,api do site (https://openweathermap.org/api)
 
 ## Layout
 
