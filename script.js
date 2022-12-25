@@ -1,16 +1,16 @@
 let min = document.querySelector('.min')
 let temp = document.querySelector('.temp')
 let max = document.querySelector('.max')
-let cidade = document.querySelector('.cidade')
+let lugar = document.querySelector('.lugar')
 let form = document.querySelector('.forms')
 let loader = document.querySelector('.loader')
 let hide = document.querySelector('.hide')
 let graus = document.querySelector('.graus')
 
-form.addEventListener('submit',async (e)=>{
+form.addEventListener('submit',async(e)=>{
     var value = document.querySelector('.input').value
     limpar()
-    cidade.innerHTML = ''
+    lugar.innerHTML = ''
     try{
          loading()
     e.preventDefault()
@@ -31,7 +31,7 @@ form.addEventListener('submit',async (e)=>{
     min.innerHTML = jsonObj.tempMinima
     temp.innerHTML = jsonObj.temp
     max.innerHTML = jsonObj.tempMax
-    cidade.innerHTML = `${jsonObj.nome},${jsonObj.country}`
+    lugar.innerHTML = `${jsonObj.nome},${jsonObj.country}`
     
     }catch(error){
         erro()
@@ -50,5 +50,5 @@ function limparLoading(){
     loader.style.display = 'none'
 }
 function erro(){
-    cidade.innerHTML = 'Lugar não encontrado'
+    lugar.innerHTML = 'Lugar não encontrado'
 }
