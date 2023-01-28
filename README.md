@@ -6,8 +6,6 @@
 
 ## Layout
 
- https://darlanbbs.github.io/Calculadora/
-
 ![Web1](https://github.com/darlanbbs/imgs/blob/main/images%20clima/clima.png)
 ![Web1](https://github.com/darlanbbs/imgs/blob/main/images%20clima/loading%20clima.png)
 ![Web1](https://github.com/darlanbbs/imgs/blob/main/images%20clima/erro%20clima.png)
